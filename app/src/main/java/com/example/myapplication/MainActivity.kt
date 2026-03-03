@@ -14,13 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        setRequestedOrintation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
         var r: Int = Random.nextInt(1, 7)
         Log.d("[DEBUG_RANDOM_NUM] ", "Число: $r")
-    }
-
-    private fun setRequestedOrintation(screenOrientationLandscape: Int) {
-        super.requestedOrientation = screenOrientationLandscape
     }
 
 
